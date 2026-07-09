@@ -1,0 +1,53 @@
+{
+  "name": "workspace-playwright",
+  "version": "1.0.0",
+  "description": "Workspace de automação de testes com Playwright + TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:example": "playwright test --project=\"example:*\"",
+    "test:chromium": "playwright test --project=\"*:chromium\"",
+    "test:firefox": "playwright test --project=\"*:firefox\"",
+    "test:webkit": "playwright test --project=\"*:webkit\"",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report:show": "playwright show-report",
+    "report:allure": "allure serve allure-results",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.5.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "allure-playwright": "^3.10.2",
+    "dayjs": "^1.11.21",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.63.0",
+    "uuid": "^14.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

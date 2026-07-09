@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"],
+      "@pages/*": ["shared/pages/*"],
+      "@helpers/*": ["shared/helpers/*"],
+      "@fixtures/*": ["shared/fixtures/*"]
+    }
+  },
+  "include": ["projects/**/*.ts", "shared/**/*.ts", "playwright.base.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,57 @@
+# ============================================================
+# Workspace Playwright — requirements.txt
+# Versões exatas instaladas no ambiente
+# Autor: Eduardo Felizardo Cândido
+#        Senior QA Automation Engineer | AI-driven Testing | Robot
+# Data:  2026-07-09
+# ============================================================
+
+# ------------------------------------------------------------
+# Sistema (instalar manualmente)
+# ------------------------------------------------------------
+# node >= 18.0.0          (usado: v26.4.0)
+# npm  >= 9.0.0           (usado: 11.17.0)
+# java >= 11              (usado: OpenJDK 23.0.2 Eclipse Temurin)
+# git  >= 2.x
+
+# ------------------------------------------------------------
+# Global npm (instalar com: npm install -g <pacote>)
+# ------------------------------------------------------------
+# allure-commandline      (CLI para gerar e servir relatórios Allure)
+
+# ------------------------------------------------------------
+# dependencies  (npm install)
+# ------------------------------------------------------------
+dotenv==17.4.2
+
+# ------------------------------------------------------------
+# devDependencies  (npm install)
+# ------------------------------------------------------------
+
+# Playwright
+@playwright/test==1.61.1
+
+# TypeScript
+typescript==6.0.3
+@types/node==26.1.1
+
+# ESLint
+eslint==10.6.0
+@eslint/js==10.0.1
+typescript-eslint==8.63.0
+eslint-config-prettier==10.1.8
+
+# Prettier
+prettier==3.9.4
+
+# Dados de teste
+@faker-js/faker==10.5.0
+dayjs==11.21
+uuid==14.0.1
+
+# Relatórios
+allure-playwright==3.10.2
+
+# Git hooks
+husky==9.1.7
+lint-staged==17.0.8
